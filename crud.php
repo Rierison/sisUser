@@ -15,8 +15,13 @@ $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
 // Se não for administrador, redirecionar para login
+// if ($user['perfil'] !== 'administrador') {
+//     header('Location: login.php');
+//     exit();
+// }
+
 if ($user['perfil'] !== 'administrador') {
-    header('Location: login.php');
+    header('Location: perfil.php');
     exit();
 }
 
