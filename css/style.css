@@ -1,0 +1,538 @@
+:root
+/*--paleta de cores--*/
+
+    {
+    --cor-primaria: #f464c3;
+    --cor-secundaria: #3d1c31;
+    --cor-terciaria: #fdace0;
+    --branco: white;
+    --preto: black;
+
+
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+
+}
+
+
+ul {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;  /*Espaçamento entre as letras*/
+
+
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--color-neutral-40);
+
+}
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--cor-primaria);
+    unicode-bidi: isolate;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    
+
+}
+
+#form {
+    
+    background-color: var(--color-neutral-40);
+    
+    
+
+}
+
+#form-buscar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 3px 3px;
+    border-radius: 5px;
+    margin-right: 250px;  
+
+}
+
+.bcr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    gap: 6px;
+    border-radius: 5px;
+    transform: translate(-50% -50%);
+}
+
+/*Logo da página*/
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    font-family: inter; 
+    font-size: 35px;
+    color: var(--branco);
+    font-weight: 900;
+    margin-left: 80px;
+    margin-right: 25px;
+    text-decoration: none; /*tira o sublinhado da linha nos links*/
+}
+
+.font {
+    text-decoration: none; /*tira o sublinhado da linha nos links*/
+}
+
+#buscar {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 75;
+    padding: 0.9rem;
+    border-radius: 5px;
+    outline: none;
+    color: var(--preto);
+
+}
+
+
+
+#btn-buscar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 11.5%;
+    cursor: pointer;
+    
+}
+
+.img {
+    display: flex;
+    margin-left: 5px;    
+    cursor: pointer;    
+    border-radius: none;
+    background-color: transparent;
+    border: none;
+    color: var(--color-neutral-40);
+    
+   
+   
+    
+}
+
+
+.icon-link {
+    display: inline-grid;
+    grid-template-columns-reverse: repeat(2, 1fr);
+    place-items: center;
+    text-align: center;
+    text-decoration: none; /*tira o sublinhado da linha nos links*/
+    margin-left: 5px;
+    margin-right: 20px;
+    gap: 0.5px;
+}
+
+.text1 {
+    display: flex;
+    margin: 0.4rem;
+  
+    
+    
+}
+
+.text2 {
+    display: flex;
+    margin: 0.4rem;   
+    
+    
+   
+    
+}
+   
+
+
+nav { 
+    font-size: inter;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    padding: 0.3rem;
+
+
+}
+
+nav a:first-child {
+
+    border-right: 1px solid var(--preto);
+}
+
+.font  {
+    font-size: 1.1rem;
+    color: black;
+}
+
+
+
+
+
+
+
+/*Logo da página*/
+
+/* .logo {
+    font-size: 35px;
+    color: var(--branco);
+    font-weight: 900;
+    margin-left: 10px;
+} */
+
+
+.tela {
+    padding: 25px;
+    margin-left: 50px;
+
+}
+
+.login {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 230px;
+}
+
+
+/* Container */
+.tela-login {
+    display: block;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f464c3;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-left: 100px;
+    padding: 60px;
+    border-radius: 15px; */
+    
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+
+
+}
+
+/* Campo de acesso email*/
+.tela-email {
+    padding-right: 23px;
+    font-size: 25px;
+    color: var(--preto);
+    font-weight: 900;
+    
+
+}
+
+/*Campo de acesso senha*/
+.tela-senha {
+    font-size: 25px;
+    color: var(--preto);
+    font-weight: 900;
+    padding-right: 15px;
+
+}
+
+
+/* imput email*/
+.email {
+    color: var(--preto);
+    padding: 8px;
+    outline: unset;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    
+}
+
+/* imput senha*/
+.senha {
+    color: var(--preto);
+    padding: 8px;
+    outline: unset;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+
+}
+
+/* estilo da cor do focu do input interno-email*/
+.email:focus {
+    background-color: wheat;
+}
+
+/* estilo da cor do focu do input interno-senha*/
+.senha:focus {
+    background-color: wheat;
+}
+
+/*Estilo do botão*/
+#botao {
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 8px;
+    width: 26%;
+    border-radius: 10px;
+    margin-left: 270px;
+    margin-top: 25px;    
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: var(--branco);
+    gap: 20px;
+    
+}
+
+
+.botao-form {
+    background-color: deepskyblue;
+
+
+}
+
+/*Administrador*/
+
+.container-adm {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-right: 350px;
+    
+}
+
+
+.adm {
+    font-size: 20px;
+    color: var(--preto);
+    font-weight: 900;
+}
+
+.botao-adm {
+    color: var(--preto);
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+
+
+
+/*-----------------Footer------------------*/
+
+.footer_dad {
+    justify-content: end;
+    width: 100%; 
+    
+    
+    /*preenche 100% da largura do body*/
+    color: #f5f5f5;
+    margin-top: 200px;
+    
+      
+
+}
+
+.footer-link {
+    text-decoration: none; /*tira o sublinhado da linha nos links*/
+}
+
+#footer_content {    
+    display: grid;   /*Distribuir os ítens em quatro colunas*/
+    grid-template-columns: repeat(4, 1fr) ; /* cria quatro colunas com medidas de 1fr cada*/
+    padding: 3rem 3.5rem; /*espaçamento superior e inferior de 3rem e espaçamento lado esquerdo e direito de aproximadamente 3.5rem cada*/
+    /* padding-top: 110px; */
+    padding-bottom: 180px;
+    background-color: #3d1c31;;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.4s; /*utilizado para definir o efeito de transição da opacidade ao passsar o mouse por cima dos ícones*/
+    
+}
+
+
+/*Aumenta o tamanho interno dos ícones*/
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+
+/*Vai diminuir a opacidade dos ícones ao passsar o mouse por cima*/
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;    
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#twitter {
+    background-color: black;
+}
+
+#tiktok {
+    color: #ff0050;
+}
+
+#tiktok {
+    background-color: black;
+}
+
+/*A lista*/
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;    /*espaçamento entre os ítens da lista*/
+    list-style: none;  /*tira as bolinhas da tag list*/
+    
+}
+
+
+/*Define os itens da lista*/
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;   /*utilizado para definir o efeito de transição da opacidade ao passsar o mouse por cima dos ícones*/
+}
+
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+
+
+/*------------email, botão----------------*/
+
+
+#footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-subscribe p {
+    color: var(--color-neutral-30);
+
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+
+
+
+/* estilização da caixa do email*/
+#input_group input {
+
+    all: unset;    /*para tirar toda customização padrão*/
+    pad: 0.75rem; /*aumenta o tamanho do espaçamento interno*/
+    width: 100%;
+    
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.123rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+
+}
+
+
+/*-----------------email, botão-----------------*/
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.1rem;
+    font-weight: 100;
+}
+
+
+
+/*Usando @media pode deixar qualquer coisa responsiva*/
+@media screen and (max-width:768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }    
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }    
+}
+
+
