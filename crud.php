@@ -20,10 +20,13 @@ $user = $stmt->fetch();
 //     exit();
 // }
 
+
 if ($user['perfil'] !== 'administrador') {
     header('Location: perfil.php');
     exit();
 }
+
+
 
 // Processar inclusão dos clientes 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
