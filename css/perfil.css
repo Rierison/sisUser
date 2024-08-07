@@ -137,7 +137,7 @@ header {
 
 .icon-link {
     display: inline-grid;
-    grid-template-columns-reverse: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
     text-align: center;
     text-decoration: none; /*tira o sublinhado da linha nos links*/
@@ -187,7 +187,10 @@ nav a:first-child {
     color: black;
 }
 
+
+
 /* ------------Corpo--------------- */
+
 .profile-container {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -224,9 +227,9 @@ li {
 }
 
 .left nav ul li a {
-    /* margin-left: 2rem; */
+    margin-left: 2rem;
     text-decoration: none;
-    /* color: #333; */
+    color: #333;
     font-size: 1.1rem;
 }
 
@@ -244,18 +247,21 @@ main {
 
 .profile-header {
     margin-bottom: 2rem;
-}
+} 
+
 .profile-content {
-   margin-right: ;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 2rem;
+   
 }
 
 .profile-header h2 {
     font-size: 2rem;
-}
+} 
 
 .profile-content form {
-    display: flex;
-    flex-direction: column;
+    
     background-color: #ffe4e1;
     padding: 1rem;
     border-radius: 10px;
@@ -264,10 +270,10 @@ main {
 
 .profile-field {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
+    flex-direction: column;
+    padding: 10px;
+
+    
 }
 
 .profile-field label {
@@ -286,9 +292,26 @@ main {
 }
 
 .profile-field a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
+.username {
+    margin-right: 200px;
+    padding: 0.5rem;
+}
+.name {
+    margin-right: 200px;
+    padding: 0.5rem;
+}
+.email {
+    margin-right: 200px;
+    padding: 0.5rem;
+}
+
+.phone {
+    margin-right: 200px;
+    padding: 0.5rem;
+}
 
 /*---------Botão----------*/
 

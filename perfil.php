@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../sisUser/css/perfil.css" />
+  <link rel="stylesheet" href="../sisUser/css/perfil.css"/>
 </head>
 
 <body>
@@ -63,28 +63,28 @@
   <div class="profile-container">
 
 
-        <div class="left">
-        
+    <div class="left">
 
-          <div class="1">
-          <li><a class="link1" href="#">Minha Conta</a></li>
-          </div>
 
-          <div class="2">
-          <li><a class="link2" href="#">Lista de Desejos</a></li>
-          </div>
+      <div class="1">
+        <li><a class="link1" href="#">Minha Conta</a></li>
+      </div>
 
-          <div class="3">
-          <li><a class="link3" href="#">Categorias</a></li>
-          </div>
+      <div class="2">
+        <li><a class="link2" href="#">Lista de Desejos</a></li>
+      </div>
 
-          <div class="4">
-          <li><a class="link4" href="#">Produtos</a></li>
-          </div>
-          
-       
-        </div>
-    
+      <div class="3">
+        <li><a class="link3" href="#">Categorias</a></li>
+      </div>
+
+      <div class="4">
+        <li><a class="link4" href="#">Produtos</a></li>
+      </div>
+
+
+    </div>
+
 
     <main>
 
@@ -94,30 +94,31 @@
       </section>
 
       <section class="profile-content">
+
         <form action="#">
           <div class="profile-field">
-            <label for="username">Usuários:</label>
-            <input id="username" type="text">
-            <a href="#">Editar</a>
+            <label for="username">Usuário(a):</label>
+            <input class="username" id="username" type="text">
           </div>
 
           <div class="profile-field">
             <label for="name">Nome:</label>
-            <input id="name" type="text">
-            <a href="#">Editar</a>
+            <input class="name" id="name" type="text">
           </div>
 
           <div class="profile-field">
             <label for="email">Email:</label>
-            <input id="email" type="email">
-            <a href="#">Editar</a>
+            <input class="email" id="email" type="email">
           </div>
 
           <div class="profile-field">
             <label for="phone">Telefone:</label>
-            <input id="phone" type="number">
-            <a href="#">Editar</a>
+            <input class="phone" id="phone" hiden type="number">
+
+
           </div>
+
+
 
           <button type="submit">Gravar</button>
         </form>

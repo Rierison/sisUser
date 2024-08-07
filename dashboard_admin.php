@@ -28,7 +28,7 @@ if (isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Dashboard Administrador</title>
-    <link rel="stylesheet" href="../sisUser/css/style.css">
+    <link rel="stylesheet" href="../sisUser/css/perfil.css">
 </head>
 <body>
     <h1>Olá Usuário Administrador!</h1>
