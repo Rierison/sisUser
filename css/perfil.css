@@ -258,6 +258,8 @@ main {
 
 .profile-header h2 {
     font-size: 2rem;
+    padding: 0.8rem;
+    margin-right: 5px;
 } 
 
 .profile-content form {
